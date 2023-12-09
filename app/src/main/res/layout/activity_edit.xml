@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFC494"
+    tools:context=".EditActivity">
+
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="35dp"
+        android:hint="Name" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_person_24"
+        android:layout_marginTop="-40dp"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Email" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/baseline_email_24"
+        android:layout_marginTop="-35dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_below="@+id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/darker_gray"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="130dp"
+        />
+
+    <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#ade54677"
+        android:text=" Change Image"
+        android:layout_marginStart="125dp"
+        />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Update"
+        android:layout_marginStart="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-40dp"
+        android:text="Delete"
+        android:layout_marginStart="260dp"
+        />
+
+
+</LinearLayout>
