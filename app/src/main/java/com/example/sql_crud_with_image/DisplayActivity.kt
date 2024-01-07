@@ -16,6 +16,7 @@ class DisplayActivity : AppCompatActivity(),PersonAdapter.OnItemClickListener  {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_display)
+
         dbHelper = DbHelper(this)
         persons = dbHelper.getAllPersons()
 

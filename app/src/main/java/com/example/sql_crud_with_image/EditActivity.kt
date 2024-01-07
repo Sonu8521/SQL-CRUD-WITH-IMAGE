@@ -56,13 +56,12 @@ class EditActivity : AppCompatActivity() {
         currentPersonId = intent.getStringExtra("personId") ?: ""
 
         // Populate the EditText fields with existing data
-        val currentPerson = dbHelper.getPersonById(currentPersonId.toInt())
-        etName.setText(currentPerson.name)
-        etEmail.setText(currentPerson.email)
+//        val currentPerson = dbHelper.getPersonById(currentPersonId.toInt())
+//
 
         // Load image using Picasso or any other image loading library
         // For simplicity, we use setImageURI, you can use your preferred image loading library here
-        Glide.with(this).load(currentPerson.imageUri).into(imageView)
+      //  Glide.with(this).load(currentPerson.imageUri).into(imageView)
 
     }
     private fun pickImage() {
